@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+    <title>Siddharth Kulkarni</title>
+</head>
+<body>
+    <!-- <img src="assets/bg_top.svg" alt="Vector"> -->
+    <header>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/research.html">Research</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/videos.html">Videos</a></li>
+                <li><a href="/robots.html">Robots</a></li>
+                <li><a href="/terminal/index.html" target="_blank">Terminal</a></li>
+                <li onclick="handleContact()"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner--container">
+        <div class="banner--data">
+            <p class="banner--big">Hi, I am Siddharth Electronics Engineer</p>
+            <p class="banner--small">I like to work on projects that tackle real life challenges by developing sustainable tech based solutions. Through my
+            projects I try to develop solutions to these genuine problems using the knowledge I have and most of the time acquire
+            new skills along the way. Please go through my projects to get an idea of my work. My current field of interest are- Electronics, Robotics, Mechatronics.</p>
+            <a href="https://drive.google.com/file/d/1NfYoHqr3sEmgvWsLzUGG-BSXHITnUfpq/view?usp=sharing" target="_blank"><button class="primary--button">View Resume</button></a>
+        </div>
+        <img src="assets/profImg.jpg" alt="Profile Image" class="profile--img">
+    </div>
+
+    <div class="skills">
+        <div class="skills--container">
+            <p class="section--heading">What can I Do ?</p>
+            <p class="skills--data">I grew up in the Vigyan Ashram Fab Lab under the guidance of innovators that work on solving
+                real life problems in Rural
+                Areas, that is where I get my drive towards developing sustainable solutions to actual problems. I have worked with
+                many
+                reputed organizations as an electronics engineer, Research Intern, as well as a Developer. I am a fast learner and
+                can
+                adapt and learn new technologies required for any given project. I can handle software as well has hardware side of any given project.
+                I am currently working on Developing sustainable Solution for Human Wildlife conflict in Bhutan as a part of the Fab23 Bhutan Conference.
+                Below are some images from my latest projects, conferences, competitions etc.
+            </p>
+
+            <p class="skills--data2">
+                <b>Highlights: </b>ARM & RISC Architecture Firmware Development, IOT, Android & Web Development, PCB Development, Electronics Circuit Debugging, electronic components, Batteries, DC Motors, & Robotics system, Digital Fabrication and Tools <br>
+                <b>Languages: </b>Embedded C, Java, Python, C/C++, SQL (Postgres, MySQL), NoSQL, JavaScript, HTML/CSS, Elixir<br>
+                <b>Frameworks: </b>React, Node.js, Flask, Django, MERN Stack, Material-UI, Phoenix, Express<br>
+                <b>Communication Protocol: </b> UART, I2C, SPI, USB, TCP/IP, HTTP, REST API, NRF24, Xbee, Bluetooth, Wifi- 802.11 <br>
+                <b>Developer Tools: </b> Git, Atmel Studio, Platform IO, Android Studios, ARM Mbed, Keil Micro Vision, Cube MX Tool, Google
+                Cloud Platform, Mongo DB, Heroku, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse, KiCad, Proteus, Fusion 360. <br>
+            </p>
+
+            <div class="button--container">
+                <a href="/projects.html"><button class="central--button">Visit Projects</button></a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- carousel -->
+    <section class="carousel--section">
+        <div class="rt-container">
+            <div class="col-rt-12">
+                <div class='demo-container'>
+                    <div class='carousel'>
+                        <input checked='checked' class='carousel__activator' id='carousel-slide-activator-1' name='carousel'
+                            type='radio'>
+                        <input class='carousel__activator' id='carousel-slide-activator-2' name='carousel' type='radio'>
+                        <input class='carousel__activator' id='carousel-slide-activator-3' name='carousel' type='radio'>
+                        <div class='carousel__controls'>
+                            <label class='carousel__control carousel__control--forward' for='carousel-slide-activator-2'>
+                                👉
+                            </label>
+                        </div>
+                        <div class='carousel__controls'>
+                            <label class='carousel__control carousel__control--backward' for='carousel-slide-activator-1'>
+                                👈
+                            </label>
+                            <label class='carousel__control carousel__control--forward' for='carousel-slide-activator-3'>
+                                👉
+                            </label>
+                        </div>
+                        <div class='carousel__controls'>
+                            <label class='carousel__control carousel__control--backward' for='carousel-slide-activator-2'>
+                                👈
+                            </label>
+                        </div>
+                        <div class='carousel__screen'>
+                            <div class='carousel__track'>
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="/assets/trophy.jpg" alt="">                                </div>
+                                </div>
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="/assets/bhutan_grp.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="/assets/RTR2021.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="/assets/crousel/2021_t.jpeg" alt="2021">
+                                    </div>
+                                </div>
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="/assets/crousel/2022_t.jpg" alt="2022">
+                                    </div>
+                                </div>
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="/assets/crousel/ss.jpeg" alt="2023">
+                                    </div>
+                                </div>
+                                <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="/assets/crousel/2023.jpeg" alt="2069">
+                                    </div>
+                                </div>
+                                <div
+                                    class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        <img src="/assets/crousel/zz.jpeg" alt="2069">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- carousel end -->
+
+    <div class="experience">
+        <div class="featured-works">Work Experience</div>
+
+        <!-- 0 -->
+        <div class="experience--container">
+            <div class="expereince--element">
+                <img src="/assets/rudra_icon.png" alt="Rudra Icon" class="exp--img">
+            </div>
+            <div class="experience--data">
+                <p class="exp--big">Team Leader | Robotics Lab MMCOE</p>
+                <p class="exp--tag">2023</p>
+                <p class="exp--small">Worked with the Robotics Lab of my college for 3 years. Carried out some student level research in robotics and wireless communication.
+                    Manufactured 6 unique robots. Was selected as the Team Leader during my final Year. Participated and won awards in International Robotics Competition ABU Robocon.
+                </p>
+            </div>
+        </div>
+        
+        <div class="image-container">
+            <img src="assets/Vector 8.png" alt="Your Image">
+        </div>
+
+        <!-- 1 -->
+        <div class="experience--container">
+            <div class="expereince--element">
+                <img src="/assets/brose.png" alt="Brose Image" class="exp--img">
+            </div>
+            <div class="experience--data">
+                <p class="exp--big">Intern Electronics Engineer | Brose Automotive</p>
+                <p class="exp--tag">Oct 2022 - June 2023</p>
+                <p class="exp--small">Developed a low cost 3-Dimensional Automotive Grade Dead Reconking System.
+                Worked with Multiple IMU’s, Xtensa 32-bit Microprocessor, GPS.
+                I was responsible for the Firmware development and Embedded side of the project</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="assets/Vector 8.png" alt="Your Image">
+        </div>
+
+
+        <!-- 2 -->
+        <div class="experience--container">
+            <div class="expereince--element">
+                <img src="/assets/smalldesigns.png" alt="Small Designs Image" class="exp--img">
+            </div>
+            <div class="experience--data">
+                <p class="exp--big">Intern Electronics Engineer | Small Designs</p>
+                <p class="exp--tag">Feb 2022 - March 2022</p>
+                <p class="exp--small">Developed a system to monitor the input & output parameters of an oxygen concentrator system, to be installed
+                in an ambulance.
+                Monitoring Flow rate & purity of oxygen through the oxygen concentrator, Monitoring the ambulance Battery & Inverter Voltage and Current Consumption.
+                All the data collected was logged & the system alerted the responsible individual in case of discrepancy</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="assets/Vector 8.png" alt="Your Image">
+        </div>
+
+
+        <!-- 3 -->
+        <div class="experience--container">
+            <div class="expereince--element">
+                <img src="/assets/linkedloops.png" alt="linkedloops Image" class="exp--img">
+            </div>
+            <div class="experience--data">
+                <p class="exp--big">Intern Electronics Engineer | Linkedloops</p>
+                <p class="exp--tag">Aug 2021 - Jan 2022</p>
+                <p class="exp--small">Developing standard firmware for communication between two ARM Controllers.
+                Interfacing II2SMDC 6 axis magnetometer with LoRaWAN and Stm32 F401RE.
+                Transmitting 3-axis magnetic data by establishing communication between two LoraWAN boards.
+                Developed the firmaware to detect shape of the objects based on the change in the magnetic field.</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="assets/Vector 8.png" alt="Your Image">
+        </div>
+
+
+        <!-- 4 -->
+        <div class="experience--container">
+            <div class="expereince--element">
+                <img src="/assets/auroville.png" alt="Auroville Image" class="exp--img">
+            </div>
+            <div class="experience--data">
+                <p class="exp--big">Backend Developer | Auroville</p>
+                <p class="exp--tag">Feb 2022 - July 2022</p>
+                <p class="exp--small">Gained working experience with AWS with Elixir Phoenix Framework. Primarily worked on Purnam Labs Project.</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="assets/Vector 8.png" alt="Your Image">
+        </div>
+
+        <!-- 5 -->
+        <div class="experience--container">
+            <div class="expereince--element">
+                <img src="/assets/VA.jpg" alt="Vigyan Ashram Image" class="exp--img">
+            </div>
+            <div class="experience--data">
+                <p class="exp--big">Full Stack Developer | Vigyan Ashram</p>
+                <p class="exp--tag">Feb 2022 - March 2020</p>
+                <p class="exp--small">Developed a fully responsive web application to handle all the canteen transactions of Vigyan Ashram Pabal.
+                100+ Active Users, Stack Used MERN
+                The website is live and is actively maintained by me. Developed a user-friendly Content Management System</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="assets/Vector 8.png" alt="Your Image">
+        </div>
+
+        <!-- 6 -->
+        <div class="experience--container">
+            <div class="expereince--element">
+                <img src="/assets/nisargayan.png" alt="Nisargayan Image" class="exp--img">
+            </div>
+            <div class="experience--data">
+                <p class="exp--big">Full Stack Devloper | Nisargayan</p>
+                <p class="exp--tag">March 2020 - April 2020</p>
+                <p class="exp--small">Developed a fully responsive web application to for Nisargayan
+                The website is live and is actively maintained by me. Developed a user-friendly Content Management System</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="assets/Vector 8.png" alt="Your Image">
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/siddharth__0023/" target="_blank"><img src="assets/icons8-instagram.svg" alt="Icon 1"></a>
+            <a href="https://www.linkedin.com/in/siddharth-kulkarni-3b2138121/" target="_blank"><img src="assets/icons8-linkedin.svg" alt="Icon 2"></a>
+            <a href="mailto:punesiddharth@gmail.com" target="_blank"><img src="assets/icons8-email-60.png" alt="Icon 3"></a>
+            <a href="https://github.com/Siddharth2308" target="_blank"><img src="assets/github.svg" alt="Icon 4"></a>
+            <a><img src="assets/icons8-slide-up-64.png" alt="Icon 5" onclick="handleTop()"></a>
+        </div>
+    </footer>
+</body>
+</html>

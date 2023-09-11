@@ -1,0 +1,473 @@
+* {
+    background-color: #FFF;
+}
+
+:root {
+    --primary: #ff6464;
+    --secondry: #00a8cc;
+    --dark: #21243d;
+    --light: #8695a4;
+}
+
+footer {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* 100% viewport height */
+}
+
+.footer-icons img {
+    margin: 30px;
+    max-width: 60px;
+    max-height: 60px;
+    /* Add margin around the icons */
+
+    max-width: 325px;
+    height: 325px;
+    /* aspect-ratio: 3/2; */
+    object-fit: contain;
+}
+
+
+header {
+    background-color: #fff;
+    color: #21243D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+
+
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    /* Add margin to separate labels */
+    position: relative;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #21243D;
+    font-weight: bold;
+    transition: color 0.4s;
+    /* Transition text color on hover */
+
+    text-align: right;
+    font-family: 'Heebo';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* padding-right: 50px; */
+    padding: 0 30px;
+    padding-top: 50px;
+}
+
+nav ul li a:hover {
+    color: #f00;
+    /* Change text color to red on hover */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+}
+
+
+.primary--button {
+    width: 210px;
+    height: 50px;
+    color: #FFF;
+    font-family: 'Heebo';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    border-radius: 2px;
+    background: var(--primary, #FF6464);
+}
+
+.central--button {
+    width: 210px;
+    height: 50px;
+    color: #FFF;
+    font-family: 'Heebo';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    border-radius: 2px;
+    background: var(--primary, #FF6464);
+    /* 
+    align-items: center;
+    margin: 0 auto; */
+}
+
+
+.button--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.section--heading {
+    padding-top: 20px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    color: var(--Dark-Color, #21243D);
+    font-family: 'Heebo';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    background: transparent;
+}
+
+/* Experience */
+
+.experience--container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    max-height: fit-content;
+
+    /* padding-bottom: 50px; */
+}
+
+.exp--img {
+    max-width: 250px;
+    max-height: 180px;
+    min-width: 250px;
+    border-radius: 6px;
+    background: transparent 50% / cover no-repeat;
+    box-shadow: 0px 71px 40px -12px rgba(126, 120, 120, 0.15);
+}
+
+.experience--container a{
+    text-decoration: none;
+}
+
+.exp--big {
+    color: var(--Dark-Color, #21243D);
+    font-family: 'Heebo';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: start;
+
+    margin: 0 0px;
+    margin-left: 50px;
+}
+
+.exp--small {
+    color: var(--Dark-Color, #21243D);
+    font-family: 'Heebo';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    max-width: 700px;
+    max-height: 90px;
+
+    margin: 0 0px;
+    margin-left: 50px;
+}
+
+.exp--tag {
+    /* max-width: 60px; */
+    max-width: fit-content;
+    max-height: 25px;
+    border-radius: 16px;
+    background: #142850;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    color: #FFF;
+    font-family: 'Heebo';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    /* line-height: 60px; */
+    text-align: center;
+
+    margin: 0 0px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.video--big{
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    color: var(--Dark-Color, #21243D);
+    font-family: 'Heebo';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    background: transparent;
+}
+
+.exp--vector {
+    align-items: center;
+}
+
+.image-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.image-container img {
+    max-width: min-content;
+    max-height: min-content;
+
+}
+
+
+.featured-works,
+.featured-works * {
+    box-sizing: border-box;
+}
+
+.featured-works {
+    /* display: flex; */
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    color: var(--Dark-Color, #21243D);
+    font-family: 'Heebo';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+
+}
+
+.video--element--mobile {
+    display: none;
+}
+
+
+/* Media query for mobile view (adjust the max-width as needed) */
+@media (max-width: 768px) {
+
+    .featured-works {
+        margin-top: 20px;
+    }
+
+    .footer-icons img {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .exp--tag {
+        align-self: center;
+        display: none;
+    }
+
+    .skills--container {
+        max-width: 90vw;
+    }
+
+    .exp--img {
+        max-width: 150px;
+        max-height: 80px;
+        min-width: 150px;
+    }
+
+    .carousel--section {
+        display: none;
+    }
+
+    .experience--container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-container {
+        /* display: none; */
+        margin-bottom: 20px;
+        max-width: 90vw;
+    }
+
+    .image-container img {
+        /* display: none; */
+        max-width: 80vw;
+    }
+
+    .exp--big {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        margin: 0 0px;
+        margin-top: 10px;
+    }
+
+    .exp--small {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        margin: 0 0px;
+    }
+
+    .banner--data p {
+        margin: 30px 0;
+    }
+
+    .video--element {
+        display: none;
+    }
+
+    .video--element--mobile{
+        display: contents;
+    }
+
+    .video--big{
+        padding-top: 20px;
+        line-height: 50px;
+    }
+}
+
+
+/* Skills */
+.skills {
+    background: #EDF7FA;
+    width: 100vw;
+    height: min-content;
+}
+
+.skills--container {
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* justify-content: space-between; */
+    padding-bottom: 30px;
+    background: transparent;
+}
+
+.skills--data {
+    align-self: center;
+    max-width: 1000px;
+    text-align: justify;
+
+
+    color: var(--Dark-Color, #21243D);
+    font-family: 'Heebo';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    background: transparent;
+}
+
+.skills--data ul li{
+    align-self: center;
+    max-width: 1000px;
+    text-align: justify;
+
+
+    color: var(--Dark-Color, #21243D);
+    font-family: 'Heebo';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    background: transparent;
+}
+
+
+.skills--data2 {
+    align-self: center;
+    max-width: 1000px;
+    text-align: justify;
+
+
+    color: var(--Dark-Color, #21243D);
+    font-family: 'Heebo';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    background: transparent;
+}
+
+.skills--data b {
+    background: transparent;
+}
+
+.skills--data2 b {
+    background: transparent;
+}
+
