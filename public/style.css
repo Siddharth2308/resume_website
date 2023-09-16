@@ -512,6 +512,11 @@ nav ul li a:hover {
     }
 }
 
+.skills--data a{
+    background: transparent;
+    color: #21243D;
+}
+
 /* caro */
 
 .carousel--section{
@@ -1080,3 +1085,6 @@ header{
         display: contents;
     }
 }
+
+
+/*  */
