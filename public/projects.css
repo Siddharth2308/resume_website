@@ -318,6 +318,14 @@ nav ul li a:hover {
     display: none;
 }
 
+.button--container--r {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding-bottom: 40px;
+}
+
 
 /* Media query for mobile view (adjust the max-width as needed) */
 @media (max-width: 768px) {

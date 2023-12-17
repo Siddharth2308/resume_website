@@ -247,6 +247,10 @@ nav ul li a:hover {
 }
 
 
+.gallery--a{
+    padding-left: 20px;
+}
+
 .button--container{
     display: flex;
     justify-content: center;
